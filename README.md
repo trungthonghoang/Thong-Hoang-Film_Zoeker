@@ -1,4 +1,4 @@
-![Demo](demo1.png)
+![Demo](demo.png)
 
 ## Filmzoeker App
 Deze filmzoeker app kan met behulp van filters een lijst geven met specifieke films. De films kunnen worden gefilterd op: Nieuwste films, Avengers films, X-men films, Princess films en Batman films.
