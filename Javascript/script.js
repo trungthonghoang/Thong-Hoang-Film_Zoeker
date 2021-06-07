@@ -3,9 +3,10 @@ const movieList = document.getElementById("whereTheMoviesGo");
 
 // Functie om films toe te voegen aan de DOM
 function addMoviesToDom(movies) {
-  //  Door alle movies itereren en Li's maken
+  //  Ervoor zorgen dat de lijst eerst leeg is
   movieList.innerHTML = " ";
 
+  //  Door alle movies itereren en Li's maken
   movies.forEach((movie) => {
     const listItem = document.createElement("li");
 
@@ -64,7 +65,6 @@ function handleOnChangeEvent(event) {
 
 // Functie voor het filteren van de films
 function filterMovies(wordInMovieTitle) {
-
   const filteredMovies = movies.filter((movie) => {
     return movie.Title.includes(wordInMovieTitle);
   });
@@ -73,10 +73,8 @@ function filterMovies(wordInMovieTitle) {
 
 // Functie voor de meest recente films
 function filterLatestMovies() {
-
   const latestMovie = movies.filter((movie) => {
     return movie.Year >= 2014;
   });
   addMoviesToDom(latestMovie);
 }
-
